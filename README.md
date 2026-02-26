@@ -1,1 +1,213 @@
-# foodcourt-website-menu-makan-jurr
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foodcourt Nusantara</title>
+
+<style>
+
+/* Background animasi bergerak */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(-45deg, #ff7043, #ff9800, #ff5722, #ffab40);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* Animasi background */
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+header {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Animasi gambar header */
+header img {
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+    opacity: 0;
+    animation: muncul 1s ease forwards;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: rgba(255,255,255,0.95);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background-color: #2500ad;
+    color: white;
+}
+
+/* Semua gambar menu */
+table img {
+    width: 100px;
+    border-radius: 8px;
+    opacity: 0;
+}
+
+/* Animasi muncul satu per satu */
+table tr:nth-child(2) img {
+    animation: muncul 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+table tr:nth-child(3) img {
+    animation: muncul 1s ease forwards;
+    animation-delay: 1s;
+}
+
+table tr:nth-child(4) img {
+    animation: muncul 1s ease forwards;
+    animation-delay: 1.5s;
+}
+
+table tr:nth-child(5) img {
+    animation: muncul 1s ease forwards;
+    animation-delay: 2s;
+}
+
+table tr:nth-child(6) img {
+    animation: muncul 1s ease forwards;
+    animation-delay: 2.5s;
+}
+
+table tr:nth-child(7) img {
+    animation: muncul 1s ease forwards;
+    animation-delay: 3s;
+}
+
+/* efek hover zoom */
+table img:hover, header img:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+/* animasi muncul */
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.link-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.link-btn:hover {
+    transform: scale(1.1);
+    background-color: darkred;
+}
+
+footer {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h1>Foodcourt Nusantara Kalteng</h1>
+<p>Pusat Kuliner Favorit Anda</p>
+<img src="foodcourt leni.jpg">
+</header>
+
+<section>
+
+<h2>Daftar Menu</h2>
+
+<table>
+
+<tr>
+<th>Nama Menu</th>
+<th>Harga</th>
+<th>Gambar</th>
+</tr>
+
+<tr>
+<td>Nasi Goreng</td>
+<td>Rp 15.000</td>
+<td><img src="nasigoreng.jpg"></td>
+</tr>
+
+<tr>
+<td>Mie Ayam</td>
+<td>Rp 12.000</td>
+<td><img src="mieayam.jpg"></td>
+</tr>
+
+<tr>
+<td>Bakso</td>
+<td>Rp 13.000</td>
+<td><img src="bakso.jpg"></td>
+</tr>
+
+<tr>
+<td>Nasi Padang</td>
+<td>Rp 15.000</td>
+<td><img src="Nasi padang.jpg"></td>
+</tr>
+
+<tr>
+<td>Nasi Campur</td>
+<td>Rp 10.000</td>
+<td><img src="Nasi Campur.jpg"></td>
+</tr>
+
+<tr>
+<td>Ayam Geprek</td>
+<td>Rp 10.000</td>
+<td><img src="Ayam geprek.jpg"></td>
+</tr>
+
+</table>
+
+<a href="https://www.instagram.com" target="_blank" class="link-btn">
+Kunjungi Foodcourt
+</a>
+
+</section>
+
+<footer>
+<p>&copy; 2026 JURIANTO</p>
+</footer>
+
+</body>
+</html>
